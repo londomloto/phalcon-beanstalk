@@ -9,7 +9,6 @@ $queue->watch('test');
 while(($job = $queue->reserve())) {
 
 	$data = $job->getBody();
-	$params = http_build_query($data['params']);
 	
 	$action = $data['action'];
 	$params = http_build_query($data['params']);
