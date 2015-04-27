@@ -16,7 +16,7 @@ while(($job = $queue->reserve())) {
 
 	$ch  = curl_init();
 
-	curl_setopt($ch, CURLOPT_URL, 'http://127.0.0.1:81/bean/server/'.$action);
+	curl_setopt($ch, CURLOPT_URL, 'http://127.0.0.1/bean/server/'.$action);
 	curl_setopt($ch, CURLOPT_POST, count($params));
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
