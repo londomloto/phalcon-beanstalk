@@ -9,8 +9,7 @@ $loader = new \Phalcon\Loader();
 
 $loader->registerDirs(array(
 	'../apps/controllers/', 
-	'../apps/models/',
-	'../apps/libs/'
+	'../apps/models/'
 ));
 
 $loader->register();
